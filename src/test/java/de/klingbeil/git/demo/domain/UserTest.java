@@ -32,5 +32,15 @@ public class UserTest {
 	
 	assertEquals( expectedName, user.getName());
     }
+    
+    @Test
+    public void testEmail() throws Exception {
+	String expectedEmail = "tom@taylor.de";
+	
+	user.setEmail( expectedEmail);
+	
+	assertEquals(expectedEmail, user.getEmail());
+	
+    }
 
 }
